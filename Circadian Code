@@ -1,1 +1,6 @@
 import Pandas as pd
+filename= 'Data/pnas.1408886111.sd01.csv'
+pd.read_csv(filename, delimiter = ',', index_col = "Rank")
+#save file as df, view table
+df = pd.read_csv(filename, delimiter = ',', index_col ="Rank")
+df.head(10)
